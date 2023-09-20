@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="dark-mode">
+                    <div class="indicator"></div>
+                    <!-- <strong>Dark Mode</strong> -->
+                </div>
+                <h2>Lala</h2>
+                <form id="searchbar-form">
+                    <input type="text" placeholder="Serch City" id="searchbar">
+                    <button class="bi bi-search"></button>
+                </form>
+                <button class="location"></button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="info-wrapper">
+            <div class="time">
+                <h2>Time</h2>
+                <h1></h1>
+                <strong></strong>
+            </div>
+            <div class="info">
+                <div>
+                    <div class="temperature">
+                        <h2></h2>
+                        <strong><span class="feels-like"></span></strong>
+                    </div>
+                    <div>
+                        <div class="sunrise">
+                            <i class="bi bi-sunrise"></i>
+                            <strong>Sunrise<span></span></strong>
+                        </div>
+                        <div class="sunset"> 
+                            <i class="bi bi-sunset"></i>
+                            <strong>Sunset<span></span></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="condition">
+                    <img/>
+                    <h3></h3>
+                </div>
+                <div class="current">
+                    <div class="humidity">
+                        <img src="./images/humidity.svg" alt="">
+                        <h3>41%</h3>
+                        <strong>Humidity</strong>
+                    </div>
+                    <div class="wind-speed">
+                        <img src="./images/wind-speed.svg" alt="">
+                        <h3>2km/h</h3>
+                        <strong>Wind Speed</strong>
+                    </div>
+                    <div class="pressure">
+                        <img src="./images/pressure.svg" alt="">
+                        <h3>997hPa</h3>
+                        <strong>Pressure</strong>
+                    </div>
+                    <div class="uv">
+                        <img src="./images/uv.svg" alt="">
+                        <h3>8</h3>
+                        <strong>UV</strong>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="forecast-wrapper">
+                <div class="daily-forecast"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
